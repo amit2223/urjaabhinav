@@ -4,8 +4,6 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-solar.jpg";
 
 const stats = [
-  { value: "500+", label: "Installations" },
-  { value: "15MW+", label: "Capacity Deployed" },
   { value: "98%", label: "Client Satisfaction" },
 ];
 
@@ -32,7 +30,7 @@ const HeroSection = () => {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 border border-secondary/30 text-secondary mb-6"
           >
             <Zap className="w-4 h-4" />
-            <span className="text-sm font-medium font-heading">Jaipur's Trusted Solar Partner</span>
+            <span className="text-sm font-medium font-heading">Based in Jaipur · Serving All of Rajasthan</span>
           </motion.div>
 
           <motion.h1
@@ -79,7 +77,7 @@ const HeroSection = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-heading font-semibold text-base px-8 h-14"
+              className="border-secondary/60 text-secondary bg-secondary/10 hover:bg-secondary/20 font-heading font-semibold text-base px-8 h-14"
             >
               <a href="#services">Explore Services</a>
             </Button>
@@ -113,7 +111,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.2 }}
-          className="mt-16 grid grid-cols-3 gap-8 max-w-lg"
+          className="mt-16 flex gap-8"
         >
           {stats.map((stat) => (
             <div key={stat.label}>
