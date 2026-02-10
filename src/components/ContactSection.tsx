@@ -10,10 +10,10 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Visit Us",
-    value: "Crown Plaza, Amrapali Marg, Vaishali Nagar, Jaipur",
+    value: "G-18, Ground Floor, Crown Plaza, Amrapali Marg, Vaishali Nagar, Jaipur (Raj.)",
   },
   { icon: Phone, label: "Call Us", value: "+91 99999 99999" },
-  { icon: Mail, label: "Email Us", value: "info@solarkraft.in" },
+  { icon: Mail, label: "Email Us", value: "abhinavurjarajasthan@gmail.com" },
   { icon: Clock, label: "Working Hours", value: "Mon - Sat, 9 AM - 6 PM" },
 ];
 
@@ -169,7 +169,7 @@ const ContactSection = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="SolarKraft Office Location"
+                title="Abhinav Urja Office Location"
               />
             </div>
           </motion.div>

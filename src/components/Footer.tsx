@@ -11,12 +11,12 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
                 <Sun className="w-6 h-6 text-secondary-foreground" />
               </div>
-              <span className="font-heading font-bold text-xl">
-                Solar<span className="text-secondary">Kraft</span>
+            <span className="font-heading font-bold text-xl">
+                Abhinav<span className="text-secondary"> Urja</span>
               </span>
             </div>
             <p className="text-primary-foreground/60 text-sm leading-relaxed max-w-xs">
-              Jaipur's trusted solar energy partner — delivering smart, sustainable solutions for homes, farms, and industries.
+              Jaipur's trusted solar energy partner — delivering smart, sustainable solutions for homes, farms, and industries. Founded by Deepak Jain.
             </p>
           </div>
 
@@ -64,10 +64,10 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-primary-foreground/40">
-            © {new Date().getFullYear()} SolarKraft. All rights reserved.
+            © {new Date().getFullYear()} Abhinav Urja. All rights reserved.
           </p>
           <p className="text-xs text-primary-foreground/40">
-            Crown Plaza, Amrapali Marg, Vaishali Nagar, Jaipur, Rajasthan
+            G-18, Ground Floor, Crown Plaza, Amrapali Marg, Vaishali Nagar, Jaipur (Raj.)
           </p>
         </div>
       </div>

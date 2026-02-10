@@ -29,7 +29,7 @@ const Header = () => {
               <Sun className="w-6 h-6 text-secondary-foreground" />
             </div>
             <div className="font-heading font-bold text-lg md:text-xl text-foreground">
-              Solar<span className="text-gradient-solar">Kraft</span>
+              Abhinav<span className="text-gradient-solar"> Urja</span>
             </div>
           </a>
 
