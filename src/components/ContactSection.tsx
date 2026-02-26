@@ -12,7 +12,7 @@ const contactInfo = [
     label: "Visit Us",
     value: "G-18, Ground Floor, Crown Plaza, Amrapali Marg, Vaishali Nagar, Jaipur (Raj.)",
   },
-  { icon: Phone, label: "Call Us", value: "+91 99999 99999" },
+  { icon: Phone, label: "Call Us", value: "+91 82333 83788" },
   { icon: Mail, label: "Email Us", value: "abhinavurjarajasthan@gmail.com" },
   { icon: Clock, label: "Working Hours", value: "Mon - Sat, 9 AM - 6 PM" },
 ];
@@ -27,7 +27,9 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Thank you! We'll get back to you shortly.");
+    const text = `Hi, I'm ${formData.name}.%0A📧 Email: ${formData.email || "N/A"}%0A📱 Phone: ${formData.phone}%0A📝 Message: ${formData.message}`;
+    window.open(`https://wa.me/918233383788?text=${text}`, "_blank");
+    toast.success("Redirecting to WhatsApp...");
     setFormData({ name: "", phone: "", email: "", message: "" });
   };
 

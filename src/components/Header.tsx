@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sun, Menu, X, Phone } from "lucide-react";
+import { Sun, Menu, X, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -48,9 +48,13 @@ const Header = () => {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <a href="tel:+919999999999" className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a href="https://wa.me/918233383788" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-medium text-green-600 hover:text-green-700 transition-colors">
+              <MessageCircle className="w-4 h-4" />
+              WhatsApp
+            </a>
+            <a href="tel:+918233383788" className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               <Phone className="w-4 h-4" />
-              Get a Quote
+              +91 82333 83788
             </a>
             <Button asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-solar font-heading font-semibold">
               <a href="#contact">Contact Us</a>
@@ -87,6 +91,14 @@ const Header = () => {
                   {item.label}
                 </a>
               ))}
+              <a href="https://wa.me/918233383788" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-base font-medium text-green-600 hover:text-green-700 py-2 transition-colors">
+                <MessageCircle className="w-5 h-5" />
+                WhatsApp Us
+              </a>
+              <a href="tel:+918233383788" className="flex items-center gap-2 text-base font-medium text-muted-foreground hover:text-foreground py-2 transition-colors">
+                <Phone className="w-5 h-5" />
+                +91 82333 83788
+              </a>
               <Button asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-solar font-heading font-semibold mt-2 w-full">
                 <a href="#contact">Contact Us</a>
               </Button>
